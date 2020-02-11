@@ -10,7 +10,8 @@ npm run dev
 
 --mock 模拟请求
 
---src
+-- src
+
   -- api 服务器接口
 
   -- views 左侧菜单对应的页面
