@@ -39,7 +39,6 @@ router.beforeEach(async(to, from, next) => {
 
           // dynamically add accessible routes
           router.addRoutes(accessRoutes)
-          console.log('addRoutes', accessRoutes, roles)
           next({ ...to, replace: true })
         } catch (error) {
           console.log('error', error)
