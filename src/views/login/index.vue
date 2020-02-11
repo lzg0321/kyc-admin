@@ -58,8 +58,9 @@
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
 
       <div class="tips">
-        <span style="margin-right:20px;">username: admin</span>
+        <span style="margin-right:20px;">username: admin或者editor</span>
         <span> password: 任意6位以上密码</span>
+        <span> Google Authenticator: 随意</span>
       </div>
 
     </el-form>
