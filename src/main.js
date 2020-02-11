@@ -5,7 +5,7 @@ import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 // import locale from 'element-ui/lib/locale/lang/en' // lang i18n
-
+import * as filters from './filters' // global filters
 import '@/styles/index.scss' // global css
 
 import App from './App'
@@ -29,6 +29,11 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 Vue.use(ElementUI)
+
+// register global utility filters
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
 
 Vue.config.productionTip = false
 
